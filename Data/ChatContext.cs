@@ -7,6 +7,7 @@ namespace ChatApplication.Data
     {
         public ChatContext(DbContextOptions<ChatContext> options) : base(options) { }
 
+        public DbSet<User> Users { get; set; }
         public DbSet<ChatMessage> ChatMessages { get; set; }
     }
 }

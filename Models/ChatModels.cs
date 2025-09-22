@@ -2,13 +2,21 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ChatApplication.Models
 {
-    public class ChatMessage
+    public class User
     {
         public int Id { get; set; }
         
         [Required]
         [MaxLength(20)]
-        public string UserName { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
+    }
+
+    public class ChatMessage
+    {
+        public int Id { get; set; }
+        
+        [Required]
+        public int UserId { get; set; }  // Foreign key to User
         
         [Required]
         [MaxLength(500)]
