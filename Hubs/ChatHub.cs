@@ -6,8 +6,8 @@ namespace ChatApplication.Hubs
     {
         public async Task SendMessage(string user, string message)
         {
-            // Just broadcast the message to all clients
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            var timestamp = DateTime.Now.ToString("HH:mm");
+            await Clients.All.SendAsync("ReceiveMessage", user, message, timestamp);
         }
     }
 }

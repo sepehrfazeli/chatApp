@@ -17,6 +17,9 @@ builder.Services.AddCors(options =>
     });
 });
 
+// need to run on port 5002
+builder.WebHost.UseUrls("http://localhost:5002");
+
 var app = builder.Build();
 
 app.UseCors();
