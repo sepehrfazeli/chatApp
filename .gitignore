@@ -1,0 +1,37 @@
+### .NET Core ###
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.user
+*.suo
+
+# IDE files
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.dtbcache.v2
+
+# Dependencies
+node_modules/
+
+# Local settings
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+
+# Secrets
+*.secret.json
+**/secrets.json
+
+# OS files
+.DS_Store
+Thumbs.db
